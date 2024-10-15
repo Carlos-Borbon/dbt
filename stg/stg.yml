@@ -1,10 +1,21 @@
 version: 2
 
 models:
-  - name: stg_franchise
+  - name: stage_franchise
     columns:
         - name: franchise_id
           description: "ID of the franchise"
-          data_test:
+
+  - name: l1_franchise
+    columns:
+        - name: franchise_id
+          data_tests:
+            - unique
+            - not_null  
+
+  - name: l1_truck
+    columns:
+        - name: truck_id
+          data_tests:
             - unique
             - not_null  
