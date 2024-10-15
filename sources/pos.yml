@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: POS
+  - name: pos
     database: tb_101
     schema: RAW_POS
     tables:
